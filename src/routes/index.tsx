@@ -19,6 +19,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
+import portraitAsset from "@/assets/kgomotso-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -179,7 +180,7 @@ function Index() {
               <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-terracotta" />
-                  <span>South Africa</span>
+                  <span>Johannesburg, South Africa</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="h-4 w-4 text-terracotta" />
@@ -189,7 +190,7 @@ function Index() {
             </div>
 
             <div className="order-1 flex justify-center lg:order-2">
-              <HeroIllustration />
+              <ProfilePhoto />
             </div>
           </div>
         </section>
@@ -387,14 +388,14 @@ function Index() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
               <a
-                href="mailto:kgomotsomashigo@example.com"
+                href="mailto:momo26073@gmail.com"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-terracotta px-7 py-3.5 text-base font-semibold text-terracotta-foreground shadow-lg shadow-black/10 transition-all hover:bg-terracotta/90 sm:w-auto"
               >
                 <Mail className="h-5 w-5" />
                 Send an email
               </a>
               <a
-                href="tel:+27000000000"
+                href="tel:+27685815842"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-forest-foreground/30 bg-transparent px-7 py-3.5 text-base font-semibold text-forest-foreground transition-all hover:border-forest-foreground hover:bg-forest-foreground/10 sm:w-auto"
               >
                 <Phone className="h-5 w-5" />
@@ -412,8 +413,9 @@ function Index() {
             </div>
 
             <div className="mt-10 text-sm text-forest-foreground/70">
-              <p>Email: kgomotsomashigo@example.com</p>
-              <p className="mt-1">Phone: +27 00 000 0000</p>
+              <p>Email: momo26073@gmail.com</p>
+              <p className="mt-1">Phone: +27 68 581 5842</p>
+              <p className="mt-1">Location: Johannesburg, South Africa</p>
             </div>
           </div>
         </section>
@@ -427,14 +429,14 @@ function Index() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="mailto:kgomotsomashigo@example.com"
+              href="mailto:momo26073@gmail.com"
               className="text-muted-foreground transition-colors hover:text-terracotta"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="tel:+27000000000"
+              href="tel:+27685815842"
               className="text-muted-foreground transition-colors hover:text-terracotta"
               aria-label="Phone"
             >
@@ -456,46 +458,32 @@ function Index() {
   );
 }
 
-function HeroIllustration() {
+function ProfilePhoto() {
   return (
-    <div className="relative h-72 w-72 sm:h-96 sm:w-96">
-      <svg
-        viewBox="0 0 400 400"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-full w-full"
-        aria-hidden="true"
-      >
-        <circle cx="200" cy="200" r="160" fill="oklch(0.782 0.096 55.31 / 0.25)" />
-        <circle cx="200" cy="200" r="120" fill="oklch(0.694 0.077 136.13 / 0.2)" />
-        <path
-          d="M160 140C160 140 180 110 200 140C220 170 240 150 240 150"
-          stroke="oklch(0.613 0.128 36.729)"
-          strokeWidth="8"
-          strokeLinecap="round"
+    <div className="relative">
+      {/* Decorative background blobs */}
+      <div className="absolute -inset-4 -z-10 rounded-full bg-gradient-to-br from-sand/40 via-sage/25 to-terracotta/20 blur-2xl sm:-inset-6" />
+      <div className="absolute -bottom-6 -left-6 -z-10 h-40 w-40 rounded-full bg-sage/20 blur-3xl" />
+      <div className="absolute -right-6 -top-6 -z-10 h-36 w-36 rounded-full bg-terracotta/15 blur-3xl" />
+
+      <div className="relative h-72 w-72 overflow-hidden rounded-[2.5rem] border-4 border-background shadow-2xl shadow-terracotta/10 sm:h-96 sm:w-96">
+        <img
+          src={portraitAsset.url}
+          alt="Kgomotso Mashigo professional portrait"
+          className="h-full w-full object-cover"
+          loading="eager"
+          decoding="async"
         />
-        <circle cx="150" cy="180" r="18" fill="oklch(0.613 0.128 36.729 / 0.8)" />
-        <circle cx="250" cy="180" r="18" fill="oklch(0.613 0.128 36.729 / 0.8)" />
-        <path
-          d="M170 230Q200 260 230 230"
-          stroke="oklch(0.613 0.128 36.729)"
-          strokeWidth="8"
-          strokeLinecap="round"
-        />
-        {/* Floating shapes */}
-        <circle cx="80" cy="120" r="20" fill="oklch(0.613 0.128 36.729 / 0.15)" />
-        <circle cx="320" cy="110" r="14" fill="oklch(0.694 0.077 136.13 / 0.25)" />
-        <rect
-          x="300"
-          y="260"
-          width="32"
-          height="32"
-          rx="8"
-          transform="rotate(15 316 276)"
-          fill="oklch(0.782 0.096 55.31 / 0.4)"
-        />
-        <polygon points="90,290 110,250 130,290" fill="oklch(0.694 0.077 136.13 / 0.2)" />
-      </svg>
+      </div>
+
+      {/* Small floating badge */}
+      <div className="absolute -bottom-4 -right-4 flex items-center gap-2 rounded-full bg-background px-4 py-2 shadow-lg sm:-bottom-5 sm:-right-5 sm:px-5 sm:py-2.5">
+        <span className="relative flex h-3 w-3">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-75" />
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-sage" />
+        </span>
+        <span className="text-xs font-semibold text-foreground sm:text-sm">Open to opportunities</span>
+      </div>
     </div>
   );
 }
