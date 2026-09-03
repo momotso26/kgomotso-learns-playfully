@@ -239,9 +239,9 @@ function Index() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <QualificationCard
                 icon={<Award className="h-7 w-7" />}
-                title="ECD NQF 4"
+                title="ECD NQF Level 4"
                 org="ETDP SETA"
-                description="Certified in Early Childhood Development, qualified to support children from birth through Grade 3 with age-appropriate practice."
+                description="Certified in Early Childhood Development, qualified to support children from birth to 7 years with age-appropriate practice."
                 color="terracotta"
               />
               <QualificationCard
