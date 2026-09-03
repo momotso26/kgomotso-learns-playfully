@@ -5,4 +5,5 @@
 - [x] Update email contact links to momo26073@gmail.com
 - [x] Update phone number to 0685815842 with clickable tel: links
 - [x] Add Johannesburg, South Africa location to contact/hero
+- [x] Update Play-Based Learning qualification to include Playsa and MTBBE certification
 - [x] Verify build and preview render correctly
