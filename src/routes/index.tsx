@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Kgomotso Mashigo, an aspiring educator certified in Early Childhood Development (NQF 4), play-based learning, TEFL, and Google AI Essentials.",
+          "Portfolio of Kgomotso Mashigo, an aspiring educator certified in Early Childhood Development (NQF Level 4), play-based learning, TEFL, and Google AI Essentials.",
       },
       {
         property: "og:title",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Warm, child-centered educator portfolio showcasing ECD NQF 4, TEFL, and Google AI Essentials certifications.",
+          "Warm, child-centered educator portfolio showcasing ECD NQF Level 4, TEFL, and Google AI Essentials certifications.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
           name: "Kgomotso Mashigo",
           jobTitle: "Aspiring Educator",
           description:
-            "Early Childhood Development Certified (NQF 4), TEFL 120-hour Certified, and Google AI Essentials Certified educator passionate about play-based learning.",
+            "Early Childhood Development Certified (NQF Level 4), TEFL 120-hour Certified, and Google AI Essentials Certified educator passionate about play-based learning.",
           url: "/",
           knowsAbout: [
             "Early Childhood Development",
@@ -159,7 +159,7 @@ function Index() {
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground sm:text-xl">
                 I believe every child deserves a warm, playful start. Certified in Early Childhood
-                Development (NQF 4), TEFL, and Google AI Essentials, I nurture curious minds from
+                Development (NQF Level 4), TEFL, and Google AI Essentials, I nurture curious minds from
                 birth through the early grades.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -184,7 +184,7 @@ function Index() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="h-4 w-4 text-terracotta" />
-                  <span>ECD NQF 4 Certified</span>
+                  <span>ECD NQF Level 4 Certified</span>
                 </div>
               </div>
             </div>
@@ -239,9 +239,9 @@ function Index() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <QualificationCard
                 icon={<Award className="h-7 w-7" />}
-                title="ECD NQF 4"
+                title="ECD NQF Level 4"
                 org="ETDP SETA"
-                description="Certified in Early Childhood Development, qualified to support children from birth through Grade 3 with age-appropriate practice."
+                description="Certified in Early Childhood Development, qualified to support children from birth to 7 years with age-appropriate practice."
                 color="terracotta"
               />
               <QualificationCard
