@@ -159,7 +159,7 @@ function Index() {
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground sm:text-xl">
                 I believe every child deserves a warm, playful start. Certified in Early Childhood
-                Development (NQF 4), TEFL, and Google AI Essentials, I nurture curious minds from
+                Development (NQF Level 4), TEFL, and Google AI Essentials, I nurture curious minds from
                 birth through the early grades.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -184,7 +184,7 @@ function Index() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="h-4 w-4 text-terracotta" />
-                  <span>ECD NQF 4 Certified</span>
+                  <span>ECD NQF Level 4 Certified</span>
                 </div>
               </div>
             </div>
