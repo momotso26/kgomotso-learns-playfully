@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Kgomotso Mashigo, an aspiring educator certified in Early Childhood Development (NQF 4), play-based learning, TEFL, and Google AI Essentials.",
+          "Portfolio of Kgomotso Mashigo, an aspiring educator certified in Early Childhood Development (NQF Level 4), play-based learning, TEFL, and Google AI Essentials.",
       },
       {
         property: "og:title",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Warm, child-centered educator portfolio showcasing ECD NQF 4, TEFL, and Google AI Essentials certifications.",
+          "Warm, child-centered educator portfolio showcasing ECD NQF Level 4, TEFL, and Google AI Essentials certifications.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
           name: "Kgomotso Mashigo",
           jobTitle: "Aspiring Educator",
           description:
-            "Early Childhood Development Certified (NQF 4), TEFL 120-hour Certified, and Google AI Essentials Certified educator passionate about play-based learning.",
+            "Early Childhood Development Certified (NQF Level 4), TEFL 120-hour Certified, and Google AI Essentials Certified educator passionate about play-based learning.",
           url: "/",
           knowsAbout: [
             "Early Childhood Development",
