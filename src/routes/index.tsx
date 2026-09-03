@@ -59,6 +59,7 @@ export const Route = createFileRoute("/")({
           knowsAbout: [
             "Early Childhood Development",
             "Play-Based Learning",
+            "Mother Tongue Based Bilingual Education (MTBBE)",
             "Teaching English as a Foreign Language",
             "Google AI Essentials",
           ],
