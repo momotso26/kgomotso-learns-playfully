@@ -248,8 +248,8 @@ function Index() {
               <QualificationCard
                 icon={<Puzzle className="h-7 w-7" />}
                 title="Play-Based Learning"
-                org="Ages 0 – Grade 3"
-                description="Trained to facilitate learning through play, turning everyday moments into rich developmental opportunities."
+                org="Playsa"
+                description="Certified in Getting Started with Mother Tongue Based Bilingual Education (MTBBE), trained to facilitate learning through play from birth to Grade 3."
                 color="sage"
               />
               <QualificationCard
